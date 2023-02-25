@@ -6,10 +6,11 @@
 body{
     font-family: sans-serif;
     
+    
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-  }
+  } */
 
 /* navbar */
 
@@ -98,6 +99,8 @@ main{
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #cc1818 #a00b0b;
 }
 
 
