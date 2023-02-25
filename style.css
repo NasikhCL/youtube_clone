@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: sans-serif;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+/* navbar */
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 20px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+}
+.hamberger-icon{
+    width:30px;
+    height: 30px;
+}
+.center{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar{
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #dddddd;
+    padding-left: 20px;
+}
+.search-button{
+    position: absolute;
+    right: 0%;
+    border-radius:0 50% 50% 0 ;
+    width: 45px;
+    height: 100%;
+    background-color: #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:150px;
+}
+.mobile-search{
+    display: none;
+}
+.user-profile{
+    width: 35px;
+    height: 35px;
+
+}
+.user-profile img{
+    width: 100%;
+    height: 100%;
+    border-radius:50% ;
+}
+
+
+/* main */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* aside */
+
+.category{
+    width: 18%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+
+.category-item-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 6px;
+    
+}
+.category-icon-container{
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+.category-icon-container img{
+    width: 100%;
+    height: 100%;
+}
+
+/* home is select by default */
+.select{
+    background-color: rgb(212, 212, 212);
+}
+.category-name{
+    font-weight: 400;
+}
+.subscribed-channel-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+}
+.subscribed-channel-logo{
+    width:30px;
+    height: 30px; 
+    margin-right: 10px;
+    
+}
+.subscribed-channel-logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+/* main content */
+
+.main-content{
+    padding: 0 10px;
+    width: 82%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-container{
+    width:340px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.card-container .video-thumbnail img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.video-details{
+    width:90%;
+    display: flex;
+    align-items: center;
+}
+.channel-logo{
+    width:40px;
+    height: 40px;
+    margin-right: 10px;
+    
+}
+.channel-logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.video-title{
+    font-weight: 500;
+}
+.more-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: gray;
+    margin-left: 50px;
+   
+}
+.card-container .channel-name{
+    font-size: 12px;
+}
+.card-container .video-views-date{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    main{  
+        padding: 0;
+       
+    }
+    .category{
+        display: none;
+    }
+    .main-content{
+        width: 96%;
+        height: auto;
+        border: 1px solid green;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    
+/* navbar */
+
+.left{
+    width: 70px;
+
+}
+.hamberger-icon{
+    width:15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.center{
+    display: none;
+}
+.search-bar{
+    display: none;
+    
+}
+.search-button{
+    display: none;
+}
+.mobile-search{
+    display: block;
+}
+
+
+.card-container{
+    width:290px;
+}
+
+}
